@@ -18,17 +18,17 @@ var app = {
         this.store = new MemoryStore();
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
-	*/
+	*//*
 	initialize: function() {
         this.store = new LocalStorageStore();
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
-	/*
+	*/
 	initialize: function() {
         this.store = new WebSqlStore();
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
-*/
+
 };
 
 app.initialize();
